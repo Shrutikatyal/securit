@@ -1,0 +1,56 @@
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    tools:context="com.raywenderlich.android.arewethereyet.MapsActivity"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:src="@drawable/placeholder"
+            android:layout_alignParentTop="true"
+            android:id="@+id/imageView"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:text="Baggage Location"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginStart="21dp"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circle"
+            android:layout_below="@+id/imageView"
+            android:layout_toStartOf="@+id/textView"
+            android:layout_marginTop="12dp"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:text="Current Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignEnd="@+id/textView"
+            android:id="@+id/textView2" />
+    </RelativeLayout>
+</RelativeLayout>
